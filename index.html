@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>댕댕랜드</title>
+
+  <!-- ✔ 세련된 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -12,34 +16,37 @@
     }
 
     body {
-      font-family: sans-serif;
-      background-color: #f9f9f9;
-      color: #000; /* 👈 모든 텍스트는 검정색 */
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #222;
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 30px;
+      padding: 20px 40px;
       background-color: #fff;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #eee;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
 
-    .logo-combo {
+    .logo-area {
       display: flex;
       align-items: center;
     }
 
-    .logo-combo img {
-      height: 60px;
-      margin-right: 12px;
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
     }
 
-    .logo-combo span {
-      font-size: 24px;
+    .logo-area span {
+      font-size: 22px;
       font-weight: bold;
-      color: #222;
     }
 
     .nav-menu {
@@ -49,48 +56,13 @@
 
     .nav-menu a {
       text-decoration: none;
-      color: #222; /* 👈 메뉴 텍스트도 확실히 검정 */
-      font-size: 18px;
+      color: #333;
+      font-size: 16px;
+      transition: color 0.3s;
     }
 
     .nav-menu a:hover {
       color: #ff6600;
-    }
-
-    /* 모바일 대응 */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-menu {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
-        margin-top: 10px;
-      }
-    }
-  </style>
-</head>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>댕댕랜드 홈</title>
-  <!-- 👉 세련된 폰트 추가 -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: 'Noto Sans KR', sans-serif;
     }
 
     .hero {
@@ -98,55 +70,87 @@
       width: 100%;
       height: 100vh;
       background: url('https://yourusername.github.io/images/단체사진.png') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding-left: 60px;
     }
 
-    .overlay {
+    .hero::before {
+      content: '';
       position: absolute;
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.45); /* 어두운 반투명 오버레이 */
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
 
     .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 8%;
-      transform: translateY(-50%);
-      color: #fff;
+      position: relative;
       z-index: 2;
-      line-height: 1.5;
+      color: white;
+      max-width: 600px;
     }
 
     .hero-text h1 {
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
     .hero-text p {
-      font-size: 24px;
-      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.6;
     }
 
     @media (max-width: 768px) {
+      .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .hero {
+        padding-left: 30px;
+      }
+
       .hero-text h1 {
         font-size: 28px;
       }
 
       .hero-text p {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="hero">
+  <!-- 내비게이션 -->
+  <nav>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="댕댕랜드 로고" />
+      <span>댕댕랜드</span>
+    </div>
+    <div class="nav-menu">
+      <a href="index.html">홈</a>
+      <a href="origin.html">브랜드 소개</a>
+      <a href="services.html">서비스</a>
+      <a href="recruit.html">가맹문의</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="contact.html">문의하기</a>
+    </div>
+  </nav>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
     <div class="overlay"></div>
     <div class="hero-text">
       <h1>댕댕랜드를 처음 오셨나요?</h1>
-      <p>대한민국 최고의<br>프리미엄 애견호텔을 소개합니다.</p>
+      <p>
+        대한민국 최고의<br />
+        프리미엄 애견호텔을 소개합니다.
+      </p>
     </div>
-  </div>
+  </section>
 </body>
 </html>
