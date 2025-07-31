@@ -13,15 +13,17 @@
 
     body {
       font-family: sans-serif;
+      background-color: #f9f9f9;
+      color: #000; /* 👈 모든 텍스트는 검정색 */
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 30px;
+      padding: 20px 30px;
       background-color: #fff;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ccc;
     }
 
     .logo-combo {
@@ -31,13 +33,13 @@
 
     .logo-combo img {
       height: 60px;
-      margin-right: 10px;
+      margin-right: 12px;
     }
 
     .logo-combo span {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
-      color: #333;
+      color: #222;
     }
 
     .nav-menu {
@@ -47,9 +49,8 @@
 
     .nav-menu a {
       text-decoration: none;
-      color: #333;
-      font-size: 17px;
-      transition: color 0.3s;
+      color: #222; /* 👈 메뉴 텍스트도 확실히 검정 */
+      font-size: 18px;
     }
 
     .nav-menu a:hover {
@@ -65,6 +66,7 @@
 
       .nav-menu {
         flex-direction: column;
+        width: 100%;
         gap: 12px;
         margin-top: 10px;
       }
