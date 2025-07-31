@@ -17,26 +17,24 @@
 
     nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 15px 30px;
       background-color: #fff;
       border-bottom: 1px solid #ddd;
-      flex-wrap: wrap; /* 반응형 줄바꿈 허용 */
     }
 
-    .logo-area {
+    .logo-combo {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
     }
 
-    .logo-area img {
+    .logo-combo img {
       height: 60px;
-      margin-right: 12px;
+      margin-right: 10px;
     }
 
-    .logo-area span {
+    .logo-combo span {
       font-size: 22px;
       font-weight: bold;
       color: #333;
@@ -45,7 +43,6 @@
     .nav-menu {
       display: flex;
       gap: 25px;
-      flex-wrap: wrap;
     }
 
     .nav-menu a {
@@ -59,34 +56,24 @@
       color: #ff6600;
     }
 
-    /* ✅ 모바일 최적화 */
+    /* 모바일 대응 */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
       }
 
       .nav-menu {
         flex-direction: column;
-        width: 100%;
-        gap: 10px;
+        gap: 12px;
         margin-top: 10px;
-      }
-
-      .nav-menu a {
-        font-size: 16px;
-      }
-
-      .logo-area {
-        margin-bottom: 5px;
       }
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="logo-area">
+    <div class="logo-combo">
       <img src="images/logo.png" alt="댕댕랜드 로고" />
       <span>댕댕랜드</span>
     </div>
