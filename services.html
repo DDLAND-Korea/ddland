@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>서비스 소개 - 댕댕랜드</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+    nav {
+      background-color: #ffcccc;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5b5b;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #ff6f61;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+    ul.services {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2em;
+    }
+    ul.services li {
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #ffeef0;
+      border-radius: 10px;
+    }
+
+    /* ✅ 모바일 최적화 */
+    @media screen and (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      p, ul.services {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 메뉴바 -->
+  <nav>
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="origin.html">댕댕랜드의 탄생</a></li>
+      <li><a href="services.html">서비스 소개</a></li>
+      <li><a href="recruit.html">채용</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="contact.html">가맹문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 본문 -->
+  <section>
+    <h1>서비스 소개</h1>
+    <p>댕댕랜드는 단순한 애견호텔이 아닙니다.<br>사랑과 신뢰, 그리고 책임을 담은 프리미엄 서비스를 제공합니다.</p>
+    <ul class="services">
+      <li>🐾 24시간 실시간 케어 시스템</li>
+      <li>🛏️ 청결하고 안락한 객실 제공</li>
+      <li>🎾 놀이 프로그램 및 산책 케어</li>
+      <li>🩺 수의사 연계 건강 관리</li>
+      <li>📸 포토존 & 귀여운 앨범 제공</li>
+    </ul>
+  </section>
+
+</body>
+</html>

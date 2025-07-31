@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>채용 - 댕댕랜드</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+    }
+    nav {
+      background-color: #ffcccc;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5b5b;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #ff6f61;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .job-box {
+      background-color: #fff2f2;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+
+    /* ✅ 모바일 최적화 */
+    @media screen and (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      .job-box {
+        font-size: 1em;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 메뉴바 -->
+  <nav>
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="origin.html">댕댕랜드의 탄생</a></li>
+      <li><a href="services.html">서비스 소개</a></li>
+      <li><a href="recruit.html">채용</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="contact.html">가맹문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 본문 -->
+  <section>
+    <h1>함께할 인재를 찾습니다 🐶</h1>
+    <p>댕댕랜드는 반려견을 사랑하는 마음을 가진 인재를 환영합니다.</p>
+
+    <div class="job-box">
+      <h3>📌 모집 부문</h3>
+      <p>- 애견호텔 케어 스태프 (파트타임 / 정규직)<br>
+         - 프론트 데스크 및 예약 응대<br>
+         - 매장 위생 및 청결관리</p>
+
+      <h3 style="margin-top:30px;">🕒 근무 조건</h3>
+      <p>- 근무지: 각 지점(서울, 경기 등)<br>
+         - 근무시간: 주말/평일 교대제<br>
+         - 급여: 면접 후 협의</p>
+
+      <h3 style="margin-top:30px;">📬 지원 방법</h3>
+      <p>이메일 또는 전화로 이력서를 보내주세요</p>
+      <p>📧 msking9820@naver.com<br>
+         📞 010-8465-9579</p>
+    </div>
+  </section>
+
+</body>
+</html>

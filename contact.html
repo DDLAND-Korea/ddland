@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>가맹문의 - 댕댕랜드</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+    }
+    nav {
+      background-color: #ffcccc;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5b5b;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #ff6f61;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .contact-box {
+      background-color: #fff1f3;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ff8888;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+    .cta-button:hover {
+      background-color: #ff6666;
+    }
+
+    /* ✅ 모바일 최적화 */
+    @media screen and (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      .contact-box {
+        font-size: 1em;
+        padding: 20px;
+      }
+      .cta-button {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 메뉴바 -->
+  <nav>
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="origin.html">댕댕랜드의 탄생</a></li>
+      <li><a href="services.html">서비스 소개</a></li>
+      <li><a href="recruit.html">채용</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="contact.html">가맹문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 본문 -->
+  <section>
+    <h1>가맹문의</h1>
+    <p>댕댕랜드의 가족이 되고 싶으신가요?<br>언제든지 편하게 연락 주세요!</p>
+
+    <div class="contact-box">
+      <p>📞 전화: <strong>010-8465-9579</strong></p>
+      <p>📧 이메일: <strong>msking9820@naver.com</strong></p>
+      <p>💬 카카오톡: <strong>@댕댕랜드</strong></p>
+
+      <a href="https://forms.gle/your-form-url" target="_blank" class="cta-button">
+        👉 가맹문의 폼 작성하러 가기
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

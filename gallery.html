@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>갤러리 - 댕댕랜드</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background-color: #fffaf9;
+      color: #333;
+    }
+    nav {
+      background-color: #ffcccc;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5b5b;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      color: #ff6f61;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* ✅ 모바일 최적화 */
+    @media screen and (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 메뉴바 -->
+  <nav>
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="origin.html">댕댕랜드의 탄생</a></li>
+      <li><a href="services.html">서비스 소개</a></li>
+      <li><a href="recruit.html">채용</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="contact.html">가맹문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 본문 -->
+  <section>
+    <h1>댕댕이들의 행복한 순간들 📸</h1>
+    <p>우리 친구들의 귀엽고 사랑스러운 모습을 감상해보세요!</p>
+
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="dog1" />
+      <img src="https://images.unsplash.com/photo-1601758123927-196b3fd91e92" alt="dog2" />
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1a4a43f" alt="dog3" />
+      <img src="https://images.unsplash.com/photo-1628430024746-4fd118f23b4e" alt="dog4" />
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="dog5" />
+      <img src="https://images.unsplash.com/photo-1582457575942-63b4c4f2dd8e" alt="dog6" />
+    </div>
+  </section>
+
+</body>
+</html>

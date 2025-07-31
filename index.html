@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>댕댕랜드 - 홈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Jua', sans-serif;
+      background-color: #fff8f2;
+      color: #333;
+    }
+    nav {
+      background-color: #ffcccc;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5b5b;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #ff6f61;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+
+    /* ✅ 모바일 최적화 */
+    @media screen and (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 10px 0;
+      }
+      section {
+        padding: 50px 15px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 내비게이션 바 -->
+  <nav>
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="origin.html">댕댕랜드의 탄생</a></li>
+      <li><a href="services.html">서비스 소개</a></li>
+      <li><a href="recruit.html">채용</a></li>
+      <li><a href="gallery.html">갤러리</a></li>
+      <li><a href="contact.html">가맹문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- 홈 콘텐츠 -->
+  <section>
+    <h1>🐶 댕댕랜드에 오신 걸 환영합니다!</h1>
+    <p>24시간 함께하는 프리미엄 애견호텔, <strong>댕댕랜드</strong><br>
+    귀여움과 신뢰를 한 곳에 담았습니다.</p>
+  </section>
+
+</body>
+</html>
