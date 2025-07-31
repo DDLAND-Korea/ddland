@@ -2,148 +2,102 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>댕댕랜드 - 홈</title>
-  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>댕댕랜드</title>
   <style>
     * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Jua', sans-serif;
-      background-color: #fff8f2;
-      color: #333;
-    }
-    nav {
-      background-color: #ffcccc;
-      padding: 15px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    nav li {
-      display: inline-block;
-      margin: 0 20px;
+
+    body {
+      font-family: sans-serif;
     }
-    nav a {
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap; /* 반응형 줄바꿈 허용 */
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .logo-area img {
+      height: 60px;
+      margin-right: 12px;
+    }
+
+    .logo-area span {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-menu a {
       text-decoration: none;
       color: #333;
-      font-weight: bold;
-      font-size: 1.1em;
+      font-size: 17px;
+      transition: color 0.3s;
     }
-    nav a:hover {
-      color: #ff5b5b;
-    }
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-      color: #ff6f61;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 1.2em;
+
+    .nav-menu a:hover {
+      color: #ff6600;
     }
 
     /* ✅ 모바일 최적화 */
-    @media screen and (max-width: 600px) {
-      nav li {
-        display: block;
-        margin: 10px 0;
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
       }
-      section {
-        padding: 50px 15px;
+
+      .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
       }
-      h1 {
-        font-size: 2em;
+
+      .nav-menu a {
+        font-size: 16px;
       }
-      p {
-        font-size: 1em;
+
+      .logo-area {
+        margin-bottom: 5px;
       }
-    }
-  <head>
-  <meta charset="UTF-8">
-  <title>댕댕랜드</title>
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 24px;
-      background-color: #fff;
-    }
-
-    .nav-left {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-
-    .logo img {
-      height: 26px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-
-    .logo span {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .nav-right {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-right li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
     }
   </style>
+</head>
 <body>
-
-  <!-- 내비게이션 바 -->
-<nav>
-  <div class="nav-left">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="댕댕랜드 로고">
+  <nav>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="댕댕랜드 로고" />
       <span>댕댕랜드</span>
-    </a>
-  </div>
-  <ul class="nav-right">
-    <li><a href="origin.html">댕댕랜드의 탄생</a></li>
-    <li><a href="services.html">서비스 소개</a></li>
-    <li><a href="recruit.html">채용</a></li>
-    <li><a href="gallery.html">갤러리</a></li>
-    <li><a href="contact.html">가맹문의</a></li>
-  </ul>
-</nav>
-
-  <!-- 홈 콘텐츠 -->
-  <section>
-    <h1>🐶 댕댕랜드에 오신 걸 환영합니다!</h1>
-    <p>24시간 함께하는 프리미엄 애견호텔, <strong>댕댕랜드</strong><br>
-    귀여움과 신뢰를 한 곳에 담았습니다.</p>
-  </section>
-
+    </div>
+    <div class="nav-menu">
+      <a href="index.html">홈</a>
+      <a href="origin.html">브랜드 소개</a>
+      <a href="services.html">서비스</a>
+      <a href="recruit.html">가맹문의</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="contact.html">문의하기</a>
+    </div>
+  </nav>
 </body>
 </html>
